@@ -1,0 +1,50 @@
+* {
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background: #f0f2f3;
+  }
+.caja1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+.txt_azul{
+    -webkit-text-stroke: 1px #2b3596;
+    color: #11C6FF;
+}
+.barra{
+    height: 20px;
+    background-color: #6a70a3;
+}
+.nav_BR{
+    display: flex;
+}
+.nav_regis{
+    display: flex;
+    align-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #989ed4;
+    color: white;
+    border: 2px solid #2b3596;
+    margin: 10px;
+}
+.nav_buscar{
+    display: flex;
+    align-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #989ed4;
+    color: white;
+    border: 2px solid #2b3596;
+    margin: 10px;
+}
