@@ -18,8 +18,7 @@
     margin: 10px;
 }
 .txt_azul{
-    -webkit-text-stroke: 1px #2b3596;
-    color: #11C6FF;
+    color: black;
 }
 .barra{
     height: 20px;

@@ -18,8 +18,8 @@
     margin: 10px;
 }
 .txt_azul{
-    -webkit-text-stroke: 1px #2b3596;
-    color: #11C6FF;
+    /*-webkit-text-stroke: 1px #2b3596;*/
+    color: black;
 }
 .barra{
     height: 20px;
@@ -30,9 +30,10 @@
     align-content: center;
     border-radius: 10px;
     padding: 10px;
-    background-color: #98a1d4;
+    background-color: #989ed4;
     color: white;
     margin: 10px;
+    border: 1px solid #2b3596;
 }
 .caja2{
     text-align: center;
@@ -45,7 +46,7 @@
     
 }
 .texto_regis{
-    color: black;
+    color: #2b3596;
 }
 .texto_indica{
     color: black;
