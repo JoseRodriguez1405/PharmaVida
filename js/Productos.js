@@ -501,42 +501,59 @@ let Produc = [
 }
 ]
 
-document.getElementById("Registrar").addEventListener("submit", function(event){
-    event.preventDefault();
+const paginacionProduc = 15;
+let PaginaActual = 1;
 
-console.log("Ejecucion funcion"); 
-const NombreProduc = document.getElementById("NombreProduc").value;
-const Categoria = document.getElementById("Categoria").value;
-const Codigo = document.getElementById("Codigo").value;
-const Precio = parseFloat(document.getElementById("Precio").value);
-const Laboratorio = document.getElementById("Laboratorio").value;
-const Cantidad = document.getElementById("Cantidad").value;
-const Concentrado = document.getElementById("Concentrado");
-const Imagen = document.getElementById("Imagen").value;
+function mostrarProduc(){
+    const CardProductos = document.getElementById("CardProductos");
+    CardProductos.innerHTML = '';
 
-const nuevoProduc = {
-    NombreProduc: NombreProduc,
-    Categoria: Categoria,
-    Codigo: Codigo,
-    Precio: Precio,
-    Laboratorio: Laboratorio,
-    Cantidad: Cantidad,
-    Concentrado: Concentrado,
-    Image: Imagen,
-};
-console.log(nuevoProduc);
-const codigoExistente = Produc.some(producto => producto.Codigo == Codigo);
-if (codigoExistente) {
-    alert("El codigo ya existe. Por favor intente de nuevo");
-    return;
+    const inicio = (PaginaActual - 1) * paginacionProduc;
+    const fin = inicio + paginacionProduc;
+    const ProducPagina = Produc.slice(inicio, fin);
+
+    ProducPagina.forEach(producto => {
+        const produCard = document.createElement('section');
+        produCard.className = 'card';
+
+        produCard.innerHTML = `
+        <img class="imagen" src="${producto.Imagen}" alt="${producto.NombreProduc}">
+        <section class="card_info">
+        
+              <strong >Nombre Producto:</strong> ${producto.NombreProduc} <br>
+              <strong>Categoria:</strong> ${producto.Categoria} <br>
+              <strong>Codigo:</strong> ${producto.Codigo} <br>
+              <strong>Precio:</strong> $${producto.Precio} <br>
+              <strong>Laboratorio:</strong> ${producto.Laboratorio} <br>
+              <strong>Cantidad:</strong> ${producto.Cantidad} <br>
+              <strong>Concentrado:</strong> ${producto.Concentrado}
+        </section>      
+        `;
+
+        CardProductos.appendChild(produCard);
+    });
+
+   mostrarPaginacion();
 }
 
-Produc.push(nuevoProduc);
-console.log(Produc);
-document.getElementById("Registrar").reset();
+function mostrarPaginacion(){
+    const paginacion = document.getElementById("paginacion");
+    paginacion.innerHTML = '';
 
-});
+    const cantidadPaginas = Math.ceil(Produc.length / paginacionProduc);
 
+    for (let i = 1; i <= cantidadPaginas; i++) {
+        const button = document.createElement("button");
+        button.textContent = i;
+        if (i === PaginaActual) {
+            button.className = 'disabled'
+        }
+        button.addEventListener('click', () => {
+            PaginaActual = i;
+            mostrarProduc();
 
-
-
+        });
+        paginacion.appendChild(button);
+    }
+}
+document.addEventListener('DOMContentLoaded', mostrarProduc);

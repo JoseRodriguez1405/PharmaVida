@@ -47,3 +47,48 @@
     border: 2px solid #2b3596;
     margin: 10px;
 }
+.caja2 {
+    background-color: white;
+    text-align: center;;
+    border-radius: 10px;
+    margin: auto;
+    margin: 30px 0px 30px 50px;
+    box-shadow: 5px 5px 5px 12px rgba(39, 32, 129, 0.3);
+}
+.card{
+    margin: 10px;
+    background-color: #e4e6f1;
+    padding: 50px;
+}
+.imagen{
+    border: 1px solid #2b3596;
+    max-width: 100%;
+    height: 160px;
+    width: 260px;
+}
+
+.card_info {
+    border: 2px solid #2b3596;
+    text-align: center;
+}
+.flex_card{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+}
+.paginacion button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+.paginacion button.disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
