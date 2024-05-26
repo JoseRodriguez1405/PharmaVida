@@ -7,7 +7,7 @@ let Produc = [
         Laboratorio: "MK",
         Cantidad: "8 tabletas",
         Concentrado: "352 mg",
-        Imagen: "../img/acetaminofen.jpeg",
+        Imagen: "../img/acetaminofen.webp",
 },
 {
     NombreProduc: "Dolex niños",
@@ -27,7 +27,7 @@ let Produc = [
         Laboratorio: "LaFrancol",
         Cantidad: "8 tabletas",
         Concentrado: "400 mg",
-        Imagen: "../img/sevedol.jpeg",
+        Imagen: "../img/sevedol.webp",
 },
 {
     NombreProduc: "Vitamina C",
@@ -87,7 +87,7 @@ let Produc = [
         Laboratorio: "Glaxos",
         Cantidad: "6 tabletas",
         Concentrado: "500 mg",
-        Imagen: "../img/pax_dia.png",
+        Imagen: "../img/pax_dia.jpg",
 },
 {
     NombreProduc: "Gelicart Advance",
@@ -117,7 +117,7 @@ let Produc = [
         Laboratorio: "Pediasure",
         Cantidad: "1 tarro",
         Concentrado: "220 ml",
-        Imagen: "../img/pediasure_chocolate.jpeg",
+        Imagen: "../img/pediasure_chocolate.webp",
 },
 {
     NombreProduc: "Prowhey Proteina Plus",
@@ -377,7 +377,7 @@ let Produc = [
         Laboratorio: "MK",
         Cantidad: "48 tabletas",
         Concentrado: "565 mg",
-        Imagen: "../img/acetaminofen_forte.jpeg",
+        Imagen: "../img/acetaminofen_forte.png",
 },
 {
     NombreProduc: "Loratadina Jarabe",
@@ -457,7 +457,7 @@ let Produc = [
         Laboratorio: "Bellaface",
         Cantidad: "28 tabletas",
         Concentrado: "2 mg",
-        Imagen: "../img/bellaface.jpeg",
+        Imagen: "../img/bellaface.webp",
 },
 {
     NombreProduc: "Suero Electrolif Sabor Uva",
@@ -467,7 +467,7 @@ let Produc = [
         Laboratorio: "Pisa Farmaceutica",
         Cantidad: "1 frasco",
         Concentrado: "625 ml",
-        Imagen: "../img/suero_uva.jpeg",
+        Imagen: "../img/suero_uva.jpg",
 },
 {
     NombreProduc: "Suero Electrolif Sabor Fresa",
@@ -497,7 +497,7 @@ let Produc = [
         Laboratorio: "Pharmaris",
         Cantidad: "30 capsulas",
         Concentrado: " ",
-        Imagen: "../img/complejo_b.jpeg",
+        Imagen: "../img/complejo_b.jpg",
 }
 ]
 
@@ -520,13 +520,13 @@ function mostrarProduc(){
         <img class="imagen" src="${producto.Imagen}" alt="${producto.NombreProduc}">
         <section class="card_info">
         
-              <strong >Nombre Producto:</strong> ${producto.NombreProduc} <br>
-              <strong>Categoria:</strong> ${producto.Categoria} <br>
-              <strong>Codigo:</strong> ${producto.Codigo} <br>
-              <strong>Precio:</strong> $${producto.Precio} <br>
-              <strong>Laboratorio:</strong> ${producto.Laboratorio} <br>
-              <strong>Cantidad:</strong> ${producto.Cantidad} <br>
-              <strong>Concentrado:</strong> ${producto.Concentrado}
+              <div class="color_info"><strong>${producto.NombreProduc}</strong></div> <br>
+              <strong>Categoria:</strong> ${producto.Categoria} <br></br>
+              <strong>Codigo:</strong> ${producto.Codigo} <br></br>
+              <div class="color_precio">$${producto.Precio}</div> <br>
+              <strong></strong> ${producto.Laboratorio} <br></br>
+              <strong></strong> ${producto.Cantidad} <br></br>
+              <strong></strong> ${producto.Concentrado}
         </section>      
         `;
 

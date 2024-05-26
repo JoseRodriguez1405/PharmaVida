@@ -18,8 +18,8 @@
     margin: 10px;
 }
 .txt_azul{
-    -webkit-text-stroke: 1px #64d8f5;
-    color: black;
+    -webkit-text-stroke: 1px black;
+    color: #d2c6f0;
 }
 .barra{
     height: 20px;
@@ -30,10 +30,10 @@
     align-content: center;
     border-radius: 10px;
     padding: 10px;
-    background-color: #989ed4;
-    color: white;
+    background-color: #c1c416;
+    color: black;
     margin: 10px;
-    border: 1px solid #64d8f5;
+    border: 1px solid #2b3596;
 }
 .caja2{
     text-align: center;
@@ -59,11 +59,11 @@
 .boton{
     padding: 10px 20px;
     margin: 50px;
-    background-color: #989ed4;
+    background-color: #c1c416;
     border-radius: 10px;
     cursor: pointer;
     border: none;
-    color: white;
+    color: black;
 }
 .space_button{
     display: flex;
@@ -74,6 +74,7 @@
 }
 .titulo{
     padding: 30px;
+  
 }
 .borde{
     border-radius: 10px;
