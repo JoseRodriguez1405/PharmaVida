@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/filtro.css">
+    <link rel="shortcut icon" href="../img/logo_PharmaVida_2.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
+    <title>Busqueda Productos</title>
+</head>
+<body>
+    <header class="caja1">
+        <img src="../img/logo_PharmaVida_2.png" alt="" class="logo">
+        <section class="caja_buscar">
+            <input class="barra_buscar" id="Buscar" type="text" placeholder="Buscar..." onkeyup="FiltrarTabla()">
+            <button class="button_barra"><i class="fa-solid fa-magnifying-glass" style="color: #ff914d;"></i></button>
+        </section>
+        <nav>
+            <a href="" class="nav_produc">Productos</a>
+        </nav>
+    </header>
+    <p class="barra"></p>
+
+    <main class="caja2">
+        <table class="caja_tabla" id="produc_tabla">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Categoria</th>
+                    <th>Codigo</th>
+                    <th>Precio</th>
+                    <th>Laboratorio</th>
+                    <th>Cantidad</th>
+                    <th>Concentrado</th>
+                    <th>Imagen</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+
+    <script src="../js/filtro.js"></script>
+</body>
+
+</html>

@@ -30,10 +30,9 @@
     align-content: center;
     border-radius: 10px;
     padding: 10px;
-    background-color: #c1c416;
+    background-color: #e9aa6f;
     color: black;
     margin: 10px;
-    border: 1px solid #2b3596;
 }
 .caja2{
     text-align: center;
@@ -59,7 +58,7 @@
 .boton{
     padding: 10px 20px;
     margin: 50px;
-    background-color: #c1c416;
+    background-color: #e9aa6f;
     border-radius: 10px;
     cursor: pointer;
     border: none;
