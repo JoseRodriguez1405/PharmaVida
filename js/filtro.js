@@ -501,11 +501,19 @@ let Produc = [
 }
 ]
 
-function CargarTabla(Produc){
+const paginacionProduc = 10;
+let PaginaActual= 1;
+let filtrarProduc = Produc;
+
+function CargarTabla(Produc, pagina = 1){
     const tablaBody = document.getElementById("produc_tabla").getElementsByTagName("tbody")[0];
     tablaBody.innerHTML = '';
 
-    Produc.forEach(product => {
+    const inicio = (pagina - 1) * paginacionProduc;
+    const fin = inicio + paginacionProduc;
+    const ProducPagina = Produc.slice(inicio, fin);
+
+    ProducPagina.forEach(product => {
         const fila = document.createElement("tr");
 
         const nombreCelda = document.createElement("td");
@@ -544,21 +552,43 @@ function CargarTabla(Produc){
         fila.appendChild(imagenCelda);
         tablaBody.appendChild(fila);
     });
+
+    PaginacionFiltros(Produc.length, pagina);
+}
+
+function PaginacionFiltros(TotalProduc, PaginaActual){
+    const paginacion =document.getElementById("paginacion");
+    paginacion.innerHTML = '';
+
+    const TotalPaginas = Math.ceil(TotalProduc / paginacionProduc);
+
+    for (let i = 1; i <= TotalPaginas; i++) {
+        const button = document.createElement("button");
+        button.textContent = i;
+        if (i === PaginaActual) {
+            button.className = 'disabled'
+        }
+        button.addEventListener('click', () => {
+            CargarTabla(filtrarProduc, i);
+
+        });
+        paginacion.appendChild(button);
+    }
 }
 
 function FiltrarTabla(){
 
-    const input = document.getElementById("Buscar").ariaValueMax.toLowerCase();
+    const input = document.getElementById("Buscar").value.toLowerCase();
     const filtrarProduc = Produc.filter(product => 
         product.NombreProduc.toLowerCase().includes(input) ||
         product.Categoria.toLowerCase().includes(input) ||
         product.Codigo.toLowerCase().includes(input) ||
-        product.Precio.toLowerCase().includes(input) ||
+        //product.Precio.toLowerCase().includes(input) ||
         product.Laboratorio.toLowerCase().includes(input) ||
         product.Cantidad.toLowerCase().includes(input) ||
         product.Concentrado.toLowerCase().includes(input)
     );
-    CargarTabla(filtrarProduc);
+    CargarTabla(filtrarProduc, 1);
 }
 
 CargarTabla(Produc);

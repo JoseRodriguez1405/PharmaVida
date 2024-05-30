@@ -14,7 +14,7 @@
         <img src="../img/logo_PharmaVida_2.png" alt="" class="logo">
         <h1 class="txt_azul">REGISTRO DE PRODUCTOS</h1>
         <nav>
-            <a href="" class="nav_produc">Productos</a>
+            <a href="productos.html" class="nav_produc">Productos</a>
         </nav>
     </header>
     <p class="barra"></p>
@@ -32,11 +32,11 @@
 
         <article class="caja2">
             <h3 class="titulo"><Strong>Agregar Productos</Strong></h3>
-            <form action="" method="post" id="Registrar">
+            <form action="" method="post" id="Registrar" id="Limpiar">
                 <div class="form">
                     <section>
                         <label for="" class="texto_regis">Nombre del Producto</label><br>
-                        <input type="text" id="NombreProduc" class="borde" name="NombreProduc" required><br></br>
+                        <input type="text" id="NombreProduc" class="borde" name="NombreProduc" required maxlength="20"><br></br>
 
                         <label for="" class="texto_regis">Categoria</label><br>
                         <select name="categoria" id="Categoria" class="borde" required>
@@ -51,7 +51,7 @@
                         </select><br></br>
 
                         <label for="" class="texto_regis">Codigo de Producto</label><br>
-                        <input type="text" id="Codigo" class="borde" name="Codigo" required><br>
+                        <input type="text" id="Codigo" class="borde" name="Codigo" required minlength="8" maxlength="10"><br>
                     </section>
 
                     <section>
@@ -71,19 +71,35 @@
 
                         <label for="" class="texto_regis">Selecione Imagen</label><br>
                         <select name="Imagen" id="Imagen" class="borde">
-                            <option value="">Selecione la imagen</option>
+                            
                         </select><br></br>
                     </section>
                 </div>
                 <section class="space_button">
                     <button type="submit" class="boton">Registrar</button>
-                    <button class="boton">Limpiar</button>
+                    <button type="reset" class="boton">Limpiar</button>
                 </section>
             </form>
 
         </article>
     </main>
-    <footer>Contacto</footer>
+    <footer>
+        <div class="contenedor-footer" id="contacto">
+            <div class="content-foo">
+                <h4>Telefono</h4>
+                <p>(602) 6602170</p>
+            </div>
+            <div class="content-foo">
+                <h4>Correo</h4>
+                <p>PharmaVida@pharma.com.co</p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicación</h4>
+                <p>Cali-Colombia</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; PharmaVida | Jose Rodriguez</h2>
+    </footer>
 
     <script src="../js/arrayProduc.js"></script>
 </body>

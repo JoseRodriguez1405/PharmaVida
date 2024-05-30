@@ -501,6 +501,24 @@ let Produc = [
 }
 ]
 
+const imagenesRegistro = [
+    "../img/medicamentos1.jpg",
+    "../img/medicamentos2.webp",
+    "../img/medicamentos3.webp",
+    "../img/medicamentos4.jpg",
+    "../img/medicamentos5.jpg"
+];
+
+function CargarImagen(){
+    const selectorImg = document.getElementById("Imagen");
+    imagenesRegistro.forEach(Imagen => {
+        const opcion = document.createElement("option");
+        opcion.value = Imagen;
+        opcion.textContent = Imagen.split("/").pop();
+        selectorImg.appendChild(opcion);
+    });
+}
+
 document.getElementById("Registrar").addEventListener("submit", function(event){
     event.preventDefault();
 
@@ -514,6 +532,17 @@ const Cantidad = document.getElementById("Cantidad").value;
 const Concentrado = document.getElementById("Concentrado");
 const Imagen = document.getElementById("Imagen").value;
 
+const codigoRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=(.*\d){2}).{8,}$/;
+    if (!codigoRegex.test(Codigo)) {
+        alert('El código debe contener al menos una letra minúscula, una letra mayúscula, al menos 2 números y al menos 8 caracteres.');
+        return;
+    }
+const codigoExistente = Produc.some(producto => producto.Codigo == Codigo);
+if (codigoExistente) {
+    alert("El codigo ya existe. Por favor intente de nuevo");
+    return;
+}
+
 const nuevoProduc = {
     NombreProduc: NombreProduc,
     Categoria: Categoria,
@@ -525,18 +554,21 @@ const nuevoProduc = {
     Image: Imagen,
 };
 console.log(nuevoProduc);
-const codigoExistente = Produc.some(producto => producto.Codigo == Codigo);
-if (codigoExistente) {
-    alert("El codigo ya existe. Por favor intente de nuevo");
-    return;
-}
 
-Produc.push(nuevoProduc);
-console.log(Produc);
-document.getElementById("Registrar").reset();
+
+
+console.log("Cargando...")
+setTimeout(() => {
+    Produc.push(nuevoProduc);
+    console.log(Produc);
+}, 3000);
+
+    document.getElementById("Registrar").reset();    
 
 });
+document.addEventListener('DOMContentLoaded', CargarImagen);
 
 
-
-
+document.querySelector('#Limpiar button[type="reset"]').addEventListener("click", function() {
+    document.getElementById("Limpiar").reset();
+});
