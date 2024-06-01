@@ -6,8 +6,8 @@ Mi proyecto trata de una pagina web de visualizacion, registro y busqueda de med
 En esta visto se refleja la informacion sobre la Farmacia, con el paso a paso de como se deben registrar los productos y sus especificaciones para poder tener un buen control a la hora del inventario, nos conlleva a una guia que da la facilidad al Usuario a la hora de manipular la pagina Web.
 
 <h2>Vista de Registro de Productos</h2>
-Damos la pisibilidad en esta parte al usuario que llene una variedad de datos importantes que lleva a cabo el buen manejo de la información de cada producto, tenemos varios campos dispinibles que son los siguientes:
-<br>
+Damos la pisibilidad en esta parte al usuario que llene una variedad de datos importantes que lleva a cabo el buen manejo de la información de cada producto, tenemos varios campos dispinibles que son los siguientes:<br>
+
 <li>Nombre de Producto</li>
 <li>Categoria</li>
 <li>Codigo de Producto</li>
