@@ -30,3 +30,5 @@ Podremos encuentrar un desplieque de tarjetas (15 por cada pagina), donde lleva 
 En la parte superior tendremos dos botones que son para dirigirse a la ventana de registro o a la ventana de buscar productos por filtros.
 
 <h2>Vista de Busqueda</h2>
+
+En la parte superior vamos a encontrar una barra de busqueda que nos permitira filtrar los productos con alguna de las caracteristicas, nombres, laboratorio, codigo, cantidad o concentrado. Lo importante de esta parte es que no hay alguna opción de darle click para que busque, la pagina misma hace la función automaticamente mientras vas escribiendo lo que quieres buscar se va filtrando de inmediato.
