@@ -24,7 +24,7 @@ Muy importante saber que el codigo como lo dice en el cuadro de indicaciones tie
 <h2>Vista de Productos</h2>
 
 Podremos encuentrar un desplieque de tarjetas (15 por cada pagina), donde lleva la información del producto y su respectiva imagen, incluye una paginación para mostrar los demas productos ya que existe un array con 50 productos, esta vista es una de las mas importante, por ende tiene que llamar la atención de los usuarios, por la información, el formato y el diseño.
-<br>
+<br></br>
 En la parte superior tendremos dos botones que son para dirigirse a la ventana de registro o a la ventana de buscar productos por filtros.
 
 <h2>Vista de Busqueda</h2>
