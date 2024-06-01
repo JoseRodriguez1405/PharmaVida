@@ -7,6 +7,7 @@ En esta visto se refleja la informacion sobre la Farmacia, con el paso a paso de
 
 <h2>Vista de Registro de Productos</h2>
 Damos la pisibilidad en esta parte al usuario que llene una variedad de datos importantes que lleva a cabo el buen manejo de la información de cada producto, tenemos varios campos dispinibles que son los siguientes:
+
 <ol>
 <li>Nombre de Producto</li>
 <li>Categoria</li>
