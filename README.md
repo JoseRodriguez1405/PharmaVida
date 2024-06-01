@@ -17,6 +17,6 @@ Damos la pisibilidad en esta parte al usuario que llene una variedad de datos im
 <li>Cantidad</li>
 <li>Concentrado</li>
 <li>Selecion de Imagen</li>
-<br>
+</br>
 Tenemos dos botones que son uno para Registrar los productos que quedan guardados en un Array y el boton de limpiar para vacias el formulario.
 Nos podemos desplazar a la parte de productos con la opcion que tenemos en la parte superior con una etiqueta.
