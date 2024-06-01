@@ -7,8 +7,8 @@ En esta visto se refleja la informacion sobre la Farmacia, con el paso a paso de
 
 <h2>Vista de Registro de Productos</h2>
 Damos la pisibilidad en esta parte al usuario que llene una variedad de datos importantes que lleva a cabo el buen manejo de la información de cada producto, tenemos varios campos dispinibles que son los siguientes:
-
-<br><li>Nombre de Producto</li>
+<br>
+<li>Nombre de Producto</li>
 <li>Categoria</li>
 <li>Codigo de Producto</li>
 <li>Precio</li>
@@ -16,6 +16,6 @@ Damos la pisibilidad en esta parte al usuario que llene una variedad de datos im
 <li>Cantidad</li>
 <li>Concentrado</li>
 <li>Selecion de Imagen</li>
-<br>
+</br>
 Tenemos dos botones que son uno para Registrar los productos que quedan guardados en un Array y el boton de limpiar para vacias el formulario.
 Nos podemos desplazar a la parte de productos con la opcion que tenemos en la parte superior con una etiqueta.
