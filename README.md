@@ -18,7 +18,9 @@ Damos la pisibilidad en esta parte al usuario que llene una variedad de datos im
 <li>Selecion de Imagen</li>
 <br>
 Tenemos dos botones que son uno para Registrar los productos que quedan guardados en un Array y el boton de limpiar para vacias el formulario.
+<br></br>
 Nos podemos desplazar a la parte de productos con la opcion que tenemos en la parte superior.
+<br></br>
 Muy importante saber que el codigo como lo dice en el cuadro de indicaciones tiene que tener como minimo 8 caracteres, una mayuscula y una minusculo, al menos 2 numeros.
 
 <h2>Vista de Productos</h2>
