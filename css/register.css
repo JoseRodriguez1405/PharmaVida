@@ -25,14 +25,18 @@
     height: 20px;
     background-color: #6a70a3;
 }
-.nav_produc{
+.nav_BR{
+    display: flex;
+}
+a{
     display: flex;
     align-content: center;
     border-radius: 10px;
-    padding: 10px;
+    padding: 8px;
     background-color: #e9aa6f;
     color: black;
     margin: 10px;
+    text-decoration: none;
 }
 .caja2{
     text-align: center;

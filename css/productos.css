@@ -28,7 +28,7 @@
 .nav_BR{
     display: flex;
 }
-.nav_regis{
+a{
     display: flex;
     align-content: center;
     border-radius: 10px;
@@ -36,16 +36,9 @@
     background-color: #e9aa6f;
     color: black;
     margin: 10px;
+    text-decoration: none;
 }
-.nav_buscar{
-    display: flex;
-    align-content: center;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #e9aa6f;
-    color: black;
-    margin: 10px;
-}
+
 .caja2 {
     background-color: white;
     text-align: center;;

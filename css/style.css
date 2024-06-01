@@ -5,6 +5,9 @@
     box-sizing: border-box;
   }
   body{
+    background: #f0f2f3;
+  }
+  .logo_fondo{
     background-color: aliceblue;
     background-image: url("../img/logo_PharmaVida.png");
     height: 800px;
@@ -33,14 +36,18 @@
     height: 20px;
     background-color: #6a70a3;
 }
-.nav_produc{
+.nav_BR{
+    display: flex;
+}
+a{
     display: flex;
     align-content: center;
     border-radius: 10px;
     padding: 10px;
     background-color: #e9aa6f;
     color: black;
-    margin: 10px;
+    margin: 30px 80px;
+    text-decoration: none;
 }
 footer{
     background: #6a70a3;

@@ -13,8 +13,10 @@
     <header class="caja1">
         <img src="../img/logo_PharmaVida.png" alt="" class="logo">
         <h1 class="txt_azul">REGISTRO DE PRODUCTOS</h1>
-        <nav>
-            <a href="productos.html" class="nav_produc">Productos</a>
+        <nav class="nav_BR">
+            <a href="../index.html"><img src="../img/logo_inicio.png" alt=""></a>
+            <a href="productos.html" ><img src="../img/logo_produc.png" alt="">Producto</a>
+            <a href="filtro.html"><img src="../img/logo_buscar.png" alt="">Buscar</a>
         </nav>
     </header>
     <p class="barra"></p>
@@ -48,10 +50,10 @@
                             <option value="Cabello">Cabello</option>
                             <option value="Salud_Sexual">Salud Sexual</option>
                             <option value="Maternidad">Maternidad</option>
-                        </select><br></br>
+                        </select><br><br>
 
                         <label for="" class="texto_regis">Codigo de Producto</label><br>
-                        <input type="text" id="Codigo" class="borde" name="Codigo" required minlength="8" maxlength="10"><br>
+                        <input type="text" id="Codigo" class="borde" name="Codigo" placeholder="Ej: Ac000001" required minlength="8" maxlength="10"><br>
                     </section>
 
                     <section>
@@ -67,7 +69,7 @@
 
                     <section>
                         <label for="" class="texto_regis">Concentrado</label><br>
-                        <input type="text" id="Concentrado" class="borde" name="Concentrado"><br></br>
+                        <input type="text" id="Concentrado" class="borde" name="Concentrado" placeholder="Ej: 10mg"><br></br>
 
                         <label for="" class="texto_regis">Selecione Imagen</label><br>
                         <select name="Imagen" id="Imagen" class="borde">

@@ -13,7 +13,7 @@
     align-items: center;
 }
 .logo{
-    width: 80px;
+    width: 70px;
     height: 80px;
     margin: 10px;
 }
@@ -46,24 +46,18 @@
 }
 .nav_BR{
     display: flex;
+    margin: 10px;
 }
-.nav_produc{
+a{
     display: flex;
     align-content: center;
     border-radius: 10px;
-    padding: 10px;
+    padding: 8px;
     background-color: #e9aa6f;
-    color: black;
     margin: 10px;
-}
-.nav_regis{
-    display: flex;
-    align-content: center;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #e9aa6f;
     color: black;
-    margin: 10px;
+    
+    text-decoration: none;
 }
 .caja2 {
     background-color: white;
