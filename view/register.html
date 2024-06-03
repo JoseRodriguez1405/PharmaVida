@@ -71,11 +71,19 @@
                         <label for="" class="texto_regis">Concentrado</label><br>
                         <input type="text" id="Concentrado" class="borde" name="Concentrado" placeholder="Ej: 10mg"><br></br>
 
-                        <label for="" class="texto_regis">Selecione Imagen</label><br>
-                        <select name="Imagen" id="Imagen" class="borde">
-                            
+                        <label for="Imagen" class="texto_regis">Imagen</label><br>
+                        <select name="Imagen" id="Imagen" class="borde" >
+                            <option value="imagen1" data-img-src="../img/medicamentos1.jpg">Medicamentos1</option>
+                            <option value="imagen2" data-img-src="../img/medicamentos2.webp">Medicamentos2</option>
+                            <option value="imagen3" data-img-src="../img/medicamentos3.webp">Medicamentos3</option>
+                            <option value="imagen4" data-img-src="../img/medicamentos4.jpg">Medicamentos4</option>
+                            <option value="imagen5" data-img-src="../img/medicamentos5.jpg">Medicamentos5</option>
                         </select><br></br>
+                        <section id="imgMostrar" class="img_select">
+                            <img src="../img/medicamentos1.jpg" alt="Seleccionada">
+                   </section>
                     </section>
+                    
                 </div>
                 <section class="space_button">
                     <button type="submit" class="boton">Registrar</button>

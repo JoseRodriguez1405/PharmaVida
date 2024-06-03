@@ -501,23 +501,14 @@ let Produc = [
 }
 ]
 
-const imagenesRegistro = [
-    "../img/medicamentos1.jpg",
-    "../img/medicamentos2.webp",
-    "../img/medicamentos3.webp",
-    "../img/medicamentos4.jpg",
-    "../img/medicamentos5.jpg"
-];
+document.getElementById("Imagen").addEventListener("change", function(){
+    var selecOpcion = this.Opciones[this.selectedIndex];
+    var imgSrc = selecOpcion.getAttribute("data-img-src");
+    var MostrarSection = document.getElementById("imgMostrar");
+    var imgElemento = MostrarSection.querySelector("img");
 
-function CargarImagen(){
-    const selectorImg = document.getElementById("Imagen");
-    imagenesRegistro.forEach(Imagen => {
-        const opcion = document.createElement("option");
-        opcion.value = Imagen;
-        opcion.textContent = Imagen.split("/").pop();
-        selectorImg.appendChild(opcion);
-    });
-}
+    imgElemento.src = imgSrc;
+})
 
 document.getElementById("Registrar").addEventListener("submit", function(event){
     event.preventDefault();
@@ -553,21 +544,28 @@ const nuevoProduc = {
     Concentrado: Concentrado,
     Image: Imagen,
 };
-console.log(nuevoProduc);
+
+Produc.push(nuevoProduc)
+console.log(Produc)
+
+const CargarRegis = () => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(console.log(nuevoProduc))
+        }, 2000);
+    })
+}
+
+CargarRegis().then((datos) => {
+    console.log(datos)
+})
 
 
 
-console.log("Cargando...")
-setTimeout(() => {
-    Produc.push(nuevoProduc);
-    console.log(Produc);
-}, 3000);
 
     document.getElementById("Registrar").reset();    
 
 });
-document.addEventListener('DOMContentLoaded', CargarImagen);
-
 
 document.querySelector('#Limpiar button[type="reset"]').addEventListener("click", function() {
     document.getElementById("Limpiar").reset();
